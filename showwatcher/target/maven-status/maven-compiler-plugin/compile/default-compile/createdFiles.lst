@@ -1,0 +1,6 @@
+com\huylvq\shop\watcher\controller\RegisterController.class
+com\huylvq\shop\watcher\dao\AccountDAO.class
+com\huylvq\shop\watcher\controller\LoginController.class
+com\huylvq\shop\watcher\JakartaRestConfiguration.class
+com\huylvq\shop\watcher\resources\JakartaEE10Resource.class
+com\huylvq\shop\watcher\model\Account.class
