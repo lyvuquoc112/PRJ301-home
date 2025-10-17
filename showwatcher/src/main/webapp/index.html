@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopWatcher - Trang chủ</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- =================== HEADER =================== -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+        <a class="navbar-brand" href="index.html">
+          <span>Watcher</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+            <ul class="navbar-nav">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="watch.html">Our Watches</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ml-lg-4 mb-3 mb-lg-0">
+              <button class="btn my-2 my-sm-0 nav_search-btn" type="submit"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =================== HERO BANNER =================== -->
+  <section class="slider_section position-relative">
+    <div class="slider_bg_box">
+      <img src="images/banner-watch.jpg" alt="Banner đồng hồ" style="width:100%;height:auto;">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-lg-6">
+          <div class="detail-box">
+            <h1>
+              ShopWatcher <br>
+              <span>Đồng hồ chính hãng</span>
+            </h1>
+            <p>
+              Cửa hàng đồng hồ chính hãng — bảo hành 24 tháng, đổi trả trong 7 ngày. Hơn 1000 mẫu hot nhất từ Casio, Tissot, Seiko, DW, Apple Watch và nhiều thương hiệu khác.
+            </p>
+            <div class="btn-box">
+              <a href="watch.html" class="btn1">Mua ngay</a>
+              <a href="about.html" class="btn2">Tìm hiểu thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FEATURED PRODUCTS =================== -->
+  <section class="shop_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>Sản phẩm nổi bật</h2>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/watch1.jpg" alt="Omega Seamaster">
+            </div>
+            <div class="detail-box">
+              <h6>Omega Seamaster</h6>
+              <h6>Giá: <span>16.500.000₫</span></h6>
+            </div>
+            <div class="new"><span>Hot</span></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/watch2.jpg" alt="Tissot PRX">
+            </div>
+            <div class="detail-box">
+              <h6>Tissot PRX</h6>
+              <h6>Giá: <span>12.900.000₫</span></h6>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/watch3.jpg" alt="G-Shock GA2100">
+            </div>
+            <div class="detail-box">
+              <h6>G-SHOCK GA-2100</h6>
+              <h6>Giá: <span>3.400.000₫</span></h6>
+            </div>
+          </div>
+        </div>
+        <!-- Thêm nhiều sản phẩm khác nếu muốn -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        © <span id="displayYear"></span> ShopWatcher — Bảo hành 24 tháng • Chính hãng 100%
+      </p>
+    </div>
+  </footer>
+
+  <!-- =================== SCRIPT =================== -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+        0:{items:1},
+        600:{items:2},
+        1000:{items:3}
+      }
+    });
+    document.getElementById('displayYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

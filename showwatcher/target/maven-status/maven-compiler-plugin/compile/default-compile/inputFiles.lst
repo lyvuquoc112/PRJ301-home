@@ -1,6 +1,9 @@
 D:\code\PRJ301\showwatcher\src\main\java\com\huylvq\shop\watcher\model\Account.java
+D:\code\PRJ301\showwatcher\src\main\java\com\huylvq\shop\watcher\filter\AuthFilter.java
 D:\code\PRJ301\showwatcher\src\main\java\com\huylvq\shop\watcher\dao\AccountDAO.java
+D:\code\PRJ301\showwatcher\src\main\java\com\huylvq\shop\watcher\controller\AuthController.java
+D:\code\PRJ301\showwatcher\src\main\java\com\huylvq\shop\watcher\controller\UploadController.java
 D:\code\PRJ301\showwatcher\src\main\java\com\huylvq\shop\watcher\JakartaRestConfiguration.java
-D:\code\PRJ301\showwatcher\src\main\java\com\huylvq\shop\watcher\controller\RegisterController.java
-D:\code\PRJ301\showwatcher\src\main\java\com\huylvq\shop\watcher\controller\LoginController.java
+D:\code\PRJ301\showwatcher\src\main\java\com\huylvq\shop\watcher\config\CloudinaryConfig.java
 D:\code\PRJ301\showwatcher\src\main\java\com\huylvq\shop\watcher\resources\JakartaEE10Resource.java
+D:\code\PRJ301\showwatcher\src\main\java\com\huylvq\shop\watcher\filter\BlockJspFilter.java

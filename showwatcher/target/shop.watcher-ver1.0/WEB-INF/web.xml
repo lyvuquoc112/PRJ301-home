@@ -8,4 +8,19 @@
             30
         </session-timeout>
     </session-config>
+    
+    <context-param>
+        <param-name>CLOUD_NAME</param-name>
+        <param-value>df9qwjahp</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>API_KEY</param-name>
+        <param-value>428986171931424</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>API_SECRET</param-name>
+        <param-value>ozz1MEv4nxB1WjxlQuq1qgn7pOg</param-value>
+    </context-param>
 </web-app>

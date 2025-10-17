@@ -10,6 +10,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Login</title>
+        <!-- slider stylesheet -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+        <!-- bootstrap core css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+        <!-- fonts style -->
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&display=swap" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet" />
+
+        <!-- responsive style -->
+        <link href="css/responsive.css" rel="stylesheet" />
+
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -66,21 +81,46 @@
         </style>
     </head>
     <body>
+
+        <%
+            String username_value = "";
+            Cookie[] cookies = request.getCookies();
+            if (cookies != null) {
+                for (Cookie c : cookies) {
+                    if (c.getName().equals("USERNAME_COOKIE")) {
+                        username_value = c.getValue();
+                    }
+                }
+            }
+
+        %>
+        <jsp:include page="/WEB-INF/views/header.jsp"/>
+        <!-- 
+        -thằng include có tác dụng là lấy giao diện của thằng được chỉ định (header.jsp)
+        -gán vào thằng hiện tại.
+        -để lấy được dẫn của thằng chỉ định thì chuột phải, properties,  bằng vào đường dẫn của nó
+        -chỉ giữ từ WEB-INF cung voi dau "/" chở đi
+        -->
+
         <div class="login-container">
             <h2>Account Login</h2>
 
             <!-- Hiển thị lỗi nếu có -->
-                <div class="error">${requestScope.error}</div>
+            <div class="error">${requestScope.error}</div>
 
             <form action="login" method="post">
                 <label>Username</label>
-                <input type="text" name="username" required>
+                <input type="text" name="username" value="${username_value}" required>
 
                 <label>Password</label>
                 <input type="password" name="password" required>
 
+                <label>Remember me?</label>
+                <input type="checkbox" name="remember" value="1">
+
                 <button type="submit">Login</button>
             </form>
         </div>
+        <jsp:include page="/WEB-INF/views/footer.jsp"/>
     </body>
 </html>
